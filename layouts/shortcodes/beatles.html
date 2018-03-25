@@ -1,0 +1,7 @@
+<ul>
+  {{ range $.Site.Data.The_Beatles }}
+    {{ range .discography }}
+      <li><b>{{ .Title }}</b> (released on {{ .Released }})</li>
+    {{ end }}
+  {{ end }}
+</ul>

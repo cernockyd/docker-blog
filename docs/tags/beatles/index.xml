@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beatles on My New Hugo Site</title>
+    <link>http://jan-martinek.github.io/hugo-start/tags/beatles/</link>
+    <description>Recent content in Beatles on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs-cz</language>
+    <lastBuildDate>Thu, 15 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://jan-martinek.github.io/hugo-start/tags/beatles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>All albums of The Beatles</title>
+      <link>http://jan-martinek.github.io/hugo-start/post/another-post/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jan-martinek.github.io/hugo-start/post/another-post/</guid>
+      <description>&lt;p&gt;This is just another post. And it illustrates a mighty functionality.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

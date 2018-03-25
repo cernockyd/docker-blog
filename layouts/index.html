@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  <h2>New articles</h2>
+
+  {{ range first 10 (where .Data.Pages "Section" "post") }}
+  <li>
+    <a href="{{ .Permalink }}">{{.Title}}</a> — {{ .Date.Format "January 2, 2006" }}
+  </li>
+{{ end }}
+{{ end }}

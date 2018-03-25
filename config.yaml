@@ -1,0 +1,19 @@
+title: hugo tocccs
+baseURL: http://jan-martinek.github.io/hugo-start/
+languageCode: cs-cz
+publishDir: docs
+
+menu:
+  main:
+    - name: Homepage
+      url: /
+      weight: 10
+    - name: Archive
+      identifier: post
+      url: /post/
+      weight: 20
+
+params:
+  description: Description of my new site.
+  authors: Authors
+

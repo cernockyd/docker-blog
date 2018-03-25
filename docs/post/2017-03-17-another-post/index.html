@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="cs-cz">
+<head>
+  <meta charset="utf-8">
+  <title>My New Hugo Site</title>
+  <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="/">My New Hugo Site</a></h1>
+    </header>
+    
+    <section class="content">
+      
+<article>
+  <h1>Another post</h1>
+  <p class="date">March 13, 2017</p>
+  
+  
+
+<p>This is just another post. See how to include data inside your posts:</p>
+
+<h2 id="beatles-discography">Beatles Discography</h2>
+
+<ul>
+{% for album in site.data.beatles %}
+    <li><b>{{ album.Name }}</b> (released on {{ album.Released }})</li>
+{% endfor %}
+</ul>
+
+
+</article>
+
+    </section>
+    
+    <nav>
+      <ul>
+	<li>Home</li>
+  	<li>About</li>
+</ul>
+
+    </nav>
+  </div>
+</body>
+</html>
