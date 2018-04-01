@@ -3,66 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/post/another-post/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/post/another-post/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/post/welcome-to-hugo/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/post/welcome-to-hugo/</loc>
     <lastmod>2018-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/about/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/about/</loc>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/post/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/post/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/tags/beatles/</loc>
-    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://jan-martinek.github.io/hugo-start/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://jan-martinek.github.io/hugo-start/tags/data/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/tags/beatles/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/tags/hello-world/</loc>
-    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+    <loc>https://awfulthings.github.io/fakin-hugo/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/tags/data/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/tags/hugo/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/tags/hello-world/</loc>
     <lastmod>2018-03-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/tags/start/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/</loc>
+    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://awfulthings.github.io/fakin-hugo/tags/hugo/</loc>
     <lastmod>2018-03-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jan-martinek.github.io/hugo-start/tags/</loc>
+    <loc>https://awfulthings.github.io/fakin-hugo/tags/start/</loc>
+    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://awfulthings.github.io/fakin-hugo/tags/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

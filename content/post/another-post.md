@@ -1,7 +1,7 @@
 ---
-title: All albums of The Beatles
+title: All albums
 date: 2018-03-15
-tags: 
+tags:
     - beatles
     - data
 ---

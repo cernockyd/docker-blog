@@ -1,5 +1,5 @@
 title: hugo tocccs
-baseURL: http://jan-martinek.github.io/hugo-start/
+baseURL: https://awfulthings.github.io/fakin-hugo/
 languageCode: cs-cz
 publishDir: docs
 

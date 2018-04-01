@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on hugo tocccs</title>
-    <link>http://jan-martinek.github.io/hugo-start/categories/</link>
+    <link>https://awfulthings.github.io/fakin-hugo/categories/</link>
     <description>Recent content in Categories on hugo tocccs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     
-	<atom:link href="http://jan-martinek.github.io/hugo-start/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://awfulthings.github.io/fakin-hugo/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
