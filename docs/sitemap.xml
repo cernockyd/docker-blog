@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://awfulthings.github.io/fakin-hugo/post/embed/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://awfulthings.github.io/fakin-hugo/post/another-post/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
   </url>
@@ -18,7 +23,7 @@
   
   <url>
     <loc>https://awfulthings.github.io/fakin-hugo/post/</loc>
-    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -46,7 +51,7 @@
   
   <url>
     <loc>https://awfulthings.github.io/fakin-hugo/</loc>
-    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -6,13 +6,22 @@
     <description>Recent content in Archive on hugo tocccs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
-    <lastBuildDate>Thu, 15 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://awfulthings.github.io/fakin-hugo/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>All albums of The Beatles</title>
+      <title>Embed Dockerfile</title>
+      <link>https://awfulthings.github.io/fakin-hugo/post/embed/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/fakin-hugo/post/embed/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>All albums</title>
       <link>https://awfulthings.github.io/fakin-hugo/post/another-post/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
