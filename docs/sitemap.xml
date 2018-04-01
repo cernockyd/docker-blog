@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://awfulthings.github.io/fakin-hugo/post/bio/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://awfulthings.github.io/fakin-hugo/post/embed/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
