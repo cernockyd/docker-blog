@@ -6,7 +6,7 @@ draft: false
 
 Členové projektu a jejich motivace pro dané téma:
 
-## Dalibor C.
+## Dalibor Cernocky
 - mam to rad
 
 ## Ondrej Kadlec
