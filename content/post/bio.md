@@ -12,4 +12,5 @@ draft: false
 ## Ondrej Kadlec
 Zajímám se o nové technologie a koncept Dockeru mě zaujal (obecně kontejnery) a vidím v něm budoucnost.
 
-## Honza Fitz
+## Jan Fitz
+ - taky to mám rád - Docker rocks!!
