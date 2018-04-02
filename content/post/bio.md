@@ -10,6 +10,6 @@ draft: false
 - mam to rad
 
 ## Ondrej Kadlec
-
+Zajímám se o nové technologie a koncept Dockeru mě zaujal (obecně kontejnery) a vidím v něm budoucnost.
 
 ## Honza Fitz
