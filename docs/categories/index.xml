@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on hugo tocccs</title>
-    <link>https://awfulthings.github.io/fakin-hugo/categories/</link>
-    <description>Recent content in Categories on hugo tocccs</description>
+    <title>Categories on Docker</title>
+    <link>https://awfulthings.github.io/hugo-start/categories/</link>
+    <description>Recent content in Categories on Docker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     
-	<atom:link href="https://awfulthings.github.io/fakin-hugo/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://awfulthings.github.io/hugo-start/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
