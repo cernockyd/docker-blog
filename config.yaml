@@ -2,6 +2,7 @@ title: Docker
 baseURL: https://awfulthings.github.io/hugo-start/
 languageCode: cs-cz
 publishDir: docs
+googleAnalytics: UA-90823022-2
 
 menu:
   main:
