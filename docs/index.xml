@@ -6,10 +6,21 @@
     <description>Recent content in Home on Docker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
-    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://awfulthings.github.io/hugo-start/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Zdroje informací</title>
+      <link>https://awfulthings.github.io/hugo-start/post/infosources/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/hugo-start/post/infosources/</guid>
+      <description>Data pro projekt Užitečné weby Níže uvedené stránky slouží pro rychlou orientaci v problematice Dockeru.
+ Docker.com (Licence: Copyright © 2018 Docker Inc. All rights reserved.) Dokumentace (Licence: Copyright © 2018 Docker Inc. All rights reserved.) Oficiální YT kanál (Licence: Standardní licence YouTube) Reddit komunita (Licence: Royalty-free)  Newsfeedy Aktuální zprávy, posty a zajímavé infromace z vybraných zdrojů.
+Twitter Hugo neumí embedovat feed z Twitteru, takže je tu jen odkaz.</description>
+    </item>
     
     <item>
       <title>Bio</title>

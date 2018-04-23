@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://awfulthings.github.io/hugo-start/post/infosources/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://awfulthings.github.io/hugo-start/post/bio/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
@@ -28,7 +33,7 @@
   
   <url>
     <loc>https://awfulthings.github.io/hugo-start/post/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -49,6 +54,12 @@
   </url>
   
   <url>
+    <loc>https://awfulthings.github.io/hugo-start/tags/docker/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://awfulthings.github.io/hugo-start/tags/hello-world/</loc>
     <lastmod>2018-03-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -56,12 +67,18 @@
   
   <url>
     <loc>https://awfulthings.github.io/hugo-start/</loc>
-    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://awfulthings.github.io/hugo-start/tags/hugo/</loc>
     <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://awfulthings.github.io/hugo-start/tags/news/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

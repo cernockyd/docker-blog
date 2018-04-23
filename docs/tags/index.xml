@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>Docker</title>
+      <link>https://awfulthings.github.io/hugo-start/tags/docker/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/hugo-start/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hello World</title>
       <link>https://awfulthings.github.io/hugo-start/tags/hello-world/</link>
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
@@ -44,6 +53,15 @@
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://awfulthings.github.io/hugo-start/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>https://awfulthings.github.io/hugo-start/tags/news/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/hugo-start/tags/news/</guid>
       <description></description>
     </item>
     
