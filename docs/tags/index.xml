@@ -6,28 +6,10 @@
     <description>Recent content in Tags on Docker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
-    <lastBuildDate>Thu, 15 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://awfulthings.github.io/hugo-start/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Beatles</title>
-      <link>https://awfulthings.github.io/hugo-start/tags/beatles/</link>
-      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/tags/beatles/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>https://awfulthings.github.io/hugo-start/tags/data/</link>
-      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/tags/data/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Docker</title>
@@ -39,38 +21,11 @@
     </item>
     
     <item>
-      <title>Hello World</title>
-      <link>https://awfulthings.github.io/hugo-start/tags/hello-world/</link>
-      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/tags/hello-world/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://awfulthings.github.io/hugo-start/tags/hugo/</link>
-      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>News</title>
       <link>https://awfulthings.github.io/hugo-start/tags/news/</link>
       <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://awfulthings.github.io/hugo-start/tags/news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Start</title>
-      <link>https://awfulthings.github.io/hugo-start/tags/start/</link>
-      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/tags/start/</guid>
       <description></description>
     </item>
     

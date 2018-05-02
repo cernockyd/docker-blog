@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Docker</title>
+    <title>Nejnovější on Docker</title>
     <link>https://awfulthings.github.io/hugo-start/</link>
-    <description>Recent content in Home on Docker</description>
+    <description>Recent content in Nejnovější on Docker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
-    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://awfulthings.github.io/hugo-start/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PHP7 &#43; Apache example</title>
+      <link>https://awfulthings.github.io/hugo-start/post/apache-example/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/hugo-start/post/apache-example/</guid>
+      <description>V tomto článku si vysvětlíme a zprovozníme multistage build na příkladu webového serveru Apache s PHP včetně automatické instalace závislostí.
+Než s článkem začnete, ujistěte se máte předpoklady – víte co je to Docker a máte povědomí o tom, jak funguje a k čemu je dobrý.
+Předpoklady  Co je to Docker Instalace Dockeru Základní pojmy a principy Dockeru Co je to Apache Co je to PHP Composer - dependency management  Manuální instalace bez Dockeru Představte si, že instalujete Apache a PHP na svém počítači.</description>
+    </item>
     
     <item>
       <title>Zdroje informací</title>
@@ -43,28 +54,7 @@ Jan Fitz  taky to mám rád - Docker rocks!!  </description>
     </item>
     
     <item>
-      <title>All albums</title>
-      <link>https://awfulthings.github.io/hugo-start/post/another-post/</link>
-      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/post/another-post/</guid>
-      <description>&lt;p&gt;This is just another post. And it illustrates a mighty functionality.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Hugo!</title>
-      <link>https://awfulthings.github.io/hugo-start/post/welcome-to-hugo/</link>
-      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/post/welcome-to-hugo/</guid>
-      <description>You’ll find this post in your content/post directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run command hugo server, which launches a web server and auto-regenerates your site when a file is updated.
-To add new posts, simply add a file in the content/post directory that follows the convention name-of-post.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
+      <title>O webu</title>
       <link>https://awfulthings.github.io/hugo-start/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
