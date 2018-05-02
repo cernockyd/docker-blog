@@ -6,6 +6,10 @@ draft: false
 
 ![Logo PHP a Apache](image.png)
 
+**todo:**
+
+- [ ] přečíst to po sobě
+
 V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.
 
 Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom, jak funguje, k čemu je dobrý a znáte PHP s Apache.
@@ -145,7 +149,8 @@ docker run -p 80:80 <NAZEV IMAGE>
 
 Službu bychom nyní měli najít na adrese `localhost:80`.
 
-## Další užitečné příkazy
+
+## Další užitečné příkazy
 
 - `docker ps` List běžících containerů
 - `docker stop <ID CONTAINERU>` Vypne běžící container.
