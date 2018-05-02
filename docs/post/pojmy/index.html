@@ -44,7 +44,8 @@
   <p class="date">May 2, 2018</p>
   
 
-<p>Článek představuje základní pojmy, se kterými se běžně příjdete do styku, když pracujete s Dockerem.</p>
+<p><img src="docker--schema.png" alt="Schema vystihující fungování Dockeru" />
+Článek představuje základní pojmy, se kterými se běžně příjdete do styku, když pracujete s Dockerem.</p>
 
 <h2 id="image">Image</h2>
 
@@ -52,8 +53,7 @@
 
 <h2 id="kontejner">Kontejner</h2>
 
-<p><img src="docker-schema.png" alt="Schema popisující rozdíl mezi VM a Dockerem" />
-Kontejnerem nazýváme spuštěnou image. V podstatě se jedná o omezenou formu virtualizace, kdy není emulován hardware. Kontejner a hostující systém spolu sdílejí jádro operačního systému přičemž je aplikace běžící v kontejneru izolována od systému, který využívá.</p>
+<p>Kontejnerem nazýváme spuštěnou image. V podstatě se jedná o omezenou formu virtualizace, kdy není emulován hardware. Kontejner a hostující systém spolu sdílejí jádro operačního systému přičemž je aplikace běžící v kontejneru izolována od systému, který využívá.</p>
 
 <p>Kontejnery mají oproti virtuálním strojům menší nároky na hardware a výrazně rychleji startují. Předpokládá se, že co jedna aplikace nebo služba, to jeden kontejner.</p>
 
@@ -83,11 +83,14 @@ EXPOSE: 80
 
 <p>Ve výchozím stavu je síťová komunikace obousměrně zakázaná nejen z kontejneru na hostující systém, ale i mezi běžícími kontejnery. Chceme-li aby bylo možné pracovat s kontejnerem na úrovni sítě, je nutné upravit Dockerfile viz. výše.</p>
 
-<p>Kromě otevírání portů je samozřejmě možné definovat i režim připojení do stítě. Pár příkladů níže:
-- <code>bridge</code>: Režim síťového mostu. Jedná se o výchozí volbu a nemusí se nastavovat.
-- <code>host</code>: Zcela odstraňuje síťovou izolaci mezi hostem a kontejnerem. Tato volba je možná pouze ve <em>swarm módu</em>.
-- <code>macvlan</code>: Na linkové vrstvě je komunikace směrována přímo do kontejneru namísto hostujícího systému.
-- <code>none</code>: Kontejner s touto volbou je odpojen od internetu.</p>
+<p>Kromě otevírání portů je samozřejmě možné definovat i režim připojení do stítě. Pár příkladů níže:</p>
+
+<ul>
+<li><code>bridge</code>: Režim síťového mostu. Jedná se o výchozí volbu a nemusí se nastavovat.</li>
+<li><code>host</code>: Zcela odstraňuje síťovou izolaci mezi hostem a kontejnerem. Tato volba je možná pouze ve <em>swarm módu</em>.</li>
+<li><code>macvlan</code>: Na linkové vrstvě je komunikace směrována přímo do kontejneru namísto hostujícího systému.</li>
+<li><code>none</code>: Kontejner s touto volbou je odpojen od internetu.</li>
+</ul>
 
 <h2 id="build">Build</h2>
 
@@ -106,6 +109,40 @@ EXPOSE: 80
 <h2 id="swarm-mód">Swarm mód</h2>
 
 <p>Umožňuje běh komplexních služeb, které vyžadují běh mnoha kontejnerů na více fyzických počítačích.</p>
+
+<h2 id="docker-compose">Docker Compose</h2>
+
+<p>Docker Compose umožňuje správu na sobě závislých kontejnerů, které dohromady tvoří jeden funkční celek.</p>
+
+<p>Konfigurační soubor se vždy jmenuje <code>docker-compose.yml</code> a může vypadat třeba takto:</p>
+
+<pre><code>version: '3'
+
+services:
+	product-service:
+		build: ./product
+		volumes:
+			- ./product:/usr/src/app
+		ports:
+			- 5001:80
+
+	website:
+		image: php:apache	
+		volumes:
+			- ./website:/var/www/html
+		ports:
+			- 5000:80
+		depends_on:
+			- product-service
+</code></pre>
+
+<p>Vysvětlení:</p>
+
+<ul>
+<li><code>volumes</code>: Propojení souborových systémů hostujícího systému a kontejneru.</li>
+<li><code>ports</code>: <em>port na kterém naslouchá hostující systém</em> <strong><em>:</em></strong> <em>port na kterém naslouchá kontejner</em></li>
+<li><code>depends_on</code>: Takto označený kontejner se nespustí pokud neběží uvedený kontejner. V našem případě je tedy spuštění <em>website</em> podmíněno běžícím <em>product-service</em>.</li>
+</ul>
 
 <h2 id="docker-hub">Docker Hub</h2>
 
