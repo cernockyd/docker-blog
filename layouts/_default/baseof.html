@@ -7,17 +7,19 @@
 </head>
 <body>
   <div class="wrapper">
-    <header>
-      <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
-      <p class="description">{{ .Site.Params.description }}</p>
-    </header>
+    <div>
+      <aside>
+        <header>
+          <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+          <p class="description">{{ .Site.Params.description }}</p>
+        </header>
+        {{ partial "menu.html" . }}
+      </aside>
 
-    <div class="page">
-      {{ block "main" . }}{{ end }}
+      <div class="page">
+        {{ block "main" . }}{{ end }}
+      </div>
     </div>
-
-    {{ partial "menu.html" . }}
-
     <footer>
       <p>
         <a style="box-shadow: none" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ "/images/cc80x15.png" | relURL }}" /></a><br>
