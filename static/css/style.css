@@ -14,6 +14,24 @@ h1 {
   color: #000;
 }
 
+pre code,
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+pre code {
+  display: block;
+}
+
+tt, code {
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  font-size: 16px;
+}
+
 .page h1 {
   text-transform: none;
 }
@@ -35,8 +53,25 @@ h6 {
   color: #000;
 }
 
+ul, ol {
+  margin-top: 0;
+  padding-left: 1.6em;
+  margin-bottom: 1em;
+}
+
+ol li {
+  padding-left: .2em;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .2em;
+  padding-bottom: .4em;
+  margin-bottom: 0;
+  margin-top: 1.2em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 a {
