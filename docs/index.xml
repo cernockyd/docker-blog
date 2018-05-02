@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Co je to Docker</title>
+      <link>https://awfulthings.github.io/hugo-start/post/what-is-docker/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/hugo-start/post/what-is-docker/</guid>
+      <description>Docker je nástroj, který umožňuje snadno tvořit, nasazovat a spoustět aplikace za použití kontejnerů. Kontejner pootm umožňuje vývojáři distribuovat aplikaci se vším, co ke svému běhu potřebuje jako jeden balík dat. Támto způsobem lze celkem snadno zajistit, že aplikace napsaná ve specifickém prostředí bude přenositelná na další stroje.
+Z určitého pohledu se můžeme na Docker dívat jako na virtualizační stroj, který však nevytváří další operační systém, ale používá linuxové jádro stroje, na kterém běží.</description>
+    </item>
+    
+    <item>
       <title>PHP7 &#43; Apache example</title>
       <link>https://awfulthings.github.io/hugo-start/post/apache-example/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>

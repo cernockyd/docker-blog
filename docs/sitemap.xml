@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://awfulthings.github.io/hugo-start/post/what-is-docker/</loc>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://awfulthings.github.io/hugo-start/post/apache-example/</loc>
     <lastmod>2018-05-02T00:00:00+00:00</lastmod>
   </url>
