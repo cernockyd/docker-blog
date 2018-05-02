@@ -37,12 +37,12 @@ Docker nám umožňuje zabalit náš program jako samostatný `image`, který ob
 Abychom mohli takový image vytvořit, musíme nejdříve popsat všechny závislosti. Tyto závislosti popisujeme v souboru, který se nazývá `Dockerfile`.
 
 Dockerfile je v podstatě soubor, do kterého zapíšeme jednotlivé kroky, které bychom jinak dělali manuálně. Můžete ho vnímat jako jakousi kuchařku.
-Při vytváření `image` se Docker podívá do našeho Dockerfilu a tyto provede jednotlivé kroky.
+Při vytváření `image` se Docker podívá do našeho Dockerfilu a provede jednotlivé kroky/příkazy.
 
-Dockerfile nám umožňuje také navazovat na již vytvořený image (tzn. baseimage). Veřejný image nelazneme na [Docker Hubu](https://hub.docker.com/).
+Dockerfile nám umožňuje také navazovat na již vytvořený image (tzn. baseimage). Veřejné image nelazneme na [Docker Hubu](https://hub.docker.com/).
 Řada z nich je oficiálně spravována vývojáři Dockeru.
 
-Na image můžeme v Dockerfile navázat pomocí příkazu `FROM [nazev:verze]`. Všiměte si, že můžeme specifikovat konkrétní verzi image.
+Na baseimage můžeme v Dockerfile navázat pomocí příkazu `FROM [nazev:verze]`. Všiměte si, že můžeme specifikovat konkrétní verzi image.
 
 Pro náš projekt využijeme následující image:
 

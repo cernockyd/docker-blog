@@ -81,12 +81,12 @@
 Abychom mohli takový image vytvořit, musíme nejdříve popsat všechny závislosti. Tyto závislosti popisujeme v souboru, který se nazývá <code>Dockerfile</code>.</p>
 
 <p>Dockerfile je v podstatě soubor, do kterého zapíšeme jednotlivé kroky, které bychom jinak dělali manuálně. Můžete ho vnímat jako jakousi kuchařku.
-Při vytváření <code>image</code> se Docker podívá do našeho Dockerfilu a tyto provede jednotlivé kroky.</p>
+Při vytváření <code>image</code> se Docker podívá do našeho Dockerfilu a provede jednotlivé kroky/příkazy.</p>
 
-<p>Dockerfile nám umožňuje také navazovat na již vytvořený image (tzn. baseimage). Veřejný image nelazneme na <a href="https://hub.docker.com/">Docker Hubu</a>.
+<p>Dockerfile nám umožňuje také navazovat na již vytvořený image (tzn. baseimage). Veřejné image nelazneme na <a href="https://hub.docker.com/">Docker Hubu</a>.
 Řada z nich je oficiálně spravována vývojáři Dockeru.</p>
 
-<p>Na image můžeme v Dockerfile navázat pomocí příkazu <code>FROM [nazev:verze]</code>. Všiměte si, že můžeme specifikovat konkrétní verzi image.</p>
+<p>Na baseimage můžeme v Dockerfile navázat pomocí příkazu <code>FROM [nazev:verze]</code>. Všiměte si, že můžeme specifikovat konkrétní verzi image.</p>
 
 <p>Pro náš projekt využijeme následující image:</p>
 
