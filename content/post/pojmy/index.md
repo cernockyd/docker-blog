@@ -4,7 +4,7 @@ date: 2018-05-02
 draft: false
 ---
 
-![Schema vystihující fungování Dockeru](docker-schema.png)
+![Schema vystihující fungování Dockeru](docker--schema.png)
 Článek představuje základní pojmy, se kterými se běžně příjdete do styku, když pracujete s Dockerem.
 
 ## Image
@@ -56,6 +56,36 @@ docker build -t jmeno-kontejneru /cesta
 
 ## Swarm mód
 Umožňuje běh komplexních služeb, které vyžadují běh mnoha kontejnerů na více fyzických počítačích.
+
+## Docker Compose
+Docker Compose umožňuje správu na sobě závislých kontejnerů, které dohromady tvoří jeden funkční celek.
+
+Konfigurační soubor se vždy jmenuje `docker-compose.yml` a může vypadat třeba takto:
+```
+version: '3'
+
+services:
+	product-service:
+		build: ./product
+		volumes:
+			- ./product:/usr/src/app
+		ports:
+			- 5001:80
+
+	website:
+		image: php:apache	
+		volumes:
+			- ./website:/var/www/html
+		ports:
+			- 5000:80
+		depends_on:
+			- product-service
+```
+Vysvětlení:
+
+- `volumes`: Propojení souborových systémů hostujícího systému a kontejneru.
+- `ports`: *port na kterém naslouchá hostující systém* ***:*** *port na kterém naslouchá kontejner*
+- `depends_on`: Takto označený kontejner se nespustí pokud neběží uvedený kontejner. V našem případě je tedy spuštění *website* podmíněno běžícím *product-service*.
 
 ## Docker Hub
 Docker Hub se nachází na adrese [hub.docker.com](https://hub.docker.com/). Jedná se o repozitář s docker images, které je možní stáhnout a používat. Po registraci je možné založit si vlastní repozitář.
