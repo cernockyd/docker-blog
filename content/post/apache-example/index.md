@@ -31,7 +31,7 @@ Představte si, že instalujete Apache a PHP na svém počítači. Při instalac
 
 Kdybyste se rozhodli zprovoznit to samé na nějakém dalším počítači (např. u vašeho kamaráda, v práci), budete muset tyto kroky opakovat.
 
-### Zprovoznění s Dockerem
+## Zprovoznění s Dockerem
 
 Docker nám umožňuje zabalit náš program jako samostatný `image`, který obsahuje veškeré závislosti, prostředí a knihovny, potřebné pro běh programu.
 Abychom mohli takový image vytvořit, musíme nejdříve popsat všechny závislosti. Tyto závislosti popisujeme v souboru, který se nazývá `Dockerfile`.
