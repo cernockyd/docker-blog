@@ -1,5 +1,5 @@
 ---
-title: About
+title: O webu
 menu:
   main:
     weight: 30

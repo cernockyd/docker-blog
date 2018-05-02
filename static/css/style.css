@@ -1,27 +1,86 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto Oxygen-Sans,Ubuntu,Cantarell,“Fira Sans”,“Droid Sans”,Helvetica Neue,Helvetica,Hiragino Kaku Gothic Pro,Meiryo,Arial,sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
   line-height: 1.5;
   font-size: 18px;
-  color: #555;
 }
 
-h1,
+h1 {
+  text-transform: uppercase;
+  color: #000;
+}
+
+pre code,
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+pre code {
+  display: block;
+}
+
+tt, code {
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  font-size: 16px;
+}
+
+.page h1 {
+  text-transform: none;
+}
+
+.page .date {
+  color: #666;
+  margin: 0 0 1em;
+}
+
+h1 > a {
+  color: #000;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
   color: #000;
 }
 
+ul, ol {
+  margin-top: 0;
+  padding-left: 1.6em;
+  margin-bottom: 1em;
+}
+
+ol li {
+  padding-left: .2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: .4em;
+  margin-bottom: 0;
+  margin-top: 1.2em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
 a {
-  color: #000;
+  color: #0366d6;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .description {
@@ -51,6 +110,8 @@ footer {
   padding-left: 1.5em;
   padding-bottom: 2em;
   min-height: 400px;
+  float: left;
+  margin-top: 1.2em;
 }
 
 aside {
