@@ -33,6 +33,17 @@ Předpoklady  Co je to Docker Instalace Dockeru Základní pojmy a principy Dock
     </item>
     
     <item>
+      <title>Základní pojmy</title>
+      <link>https://awfulthings.github.io/hugo-start/post/pojmy/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/hugo-start/post/pojmy/</guid>
+      <description>Článek představuje základní pojmy, se kterými se běžně příjdete do styku, když pracujete s Dockerem.
+Image Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. base image, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.
+Kontejner Kontejnerem nazýváme spuštěnou image. V podstatě se jedná o omezenou formu virtualizace, kdy není emulován hardware. Kontejner a hostující systém spolu sdílejí jádro operačního systému přičemž je aplikace běžící v kontejneru izolována od systému, který využívá.</description>
+    </item>
+    
+    <item>
       <title>Zdroje informací</title>
       <link>https://awfulthings.github.io/hugo-start/post/infosources/</link>
       <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="cs-cz">
+<head>
+  <meta charset="utf-8">
+  <title>Docker</title>
+  <link rel="stylesheet" href="/hugo-start/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      <aside>
+        <header>
+          <h1><a href="/hugo-start/">Docker</a></h1>
+          <p class="description">Užitečné návody.</p>
+        </header>
+        <nav>
+  <ul>
+    
+    
+      
+      <li class="">
+        <a href="/hugo-start/">Homepage</a>
+      </li>
+    
+      
+      <li class="">
+        <a href="/hugo-start/post/">Archive</a>
+      </li>
+    
+      
+      <li class="">
+        <a href="/hugo-start/about/">O webu</a>
+      </li>
+    
+    <li>&hearts; 2018 Authors</li>
+  </ul>
+</nav>
+
+      </aside>
+
+      <div class="page">
+        
+  <h1>Základní pojmy</h1>
+  <p class="date">May 2, 2018</p>
+  
+
+<p>Článek představuje základní pojmy, se kterými se běžně příjdete do styku, když pracujete s Dockerem.</p>
+
+<h2 id="image">Image</h2>
+
+<p>Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. <em>base image</em>, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.</p>
+
+<h2 id="kontejner">Kontejner</h2>
+
+<p><img src="docker-schema.png" alt="Schema popisující rozdíl mezi VM a Dockerem" />
+Kontejnerem nazýváme spuštěnou image. V podstatě se jedná o omezenou formu virtualizace, kdy není emulován hardware. Kontejner a hostující systém spolu sdílejí jádro operačního systému přičemž je aplikace běžící v kontejneru izolována od systému, který využívá.</p>
+
+<p>Kontejnery mají oproti virtuálním strojům menší nároky na hardware a výrazně rychleji startují. Předpokládá se, že co jedna aplikace nebo služba, to jeden kontejner.</p>
+
+<h2 id="dockerfile">Dockerfile</h2>
+
+<p>Jedná se o textový soubor určující podobu image, kdy každý řádek představuje jeden příkaz.
+Jedná se o textový soubor s instrukcemi pro vybuildění kontejneru z image.</p>
+
+<p>Jednoduchý Dockerfile může vypadat třeba takto:</p>
+
+<pre><code>FROM: php:7.2.5-apache
+COPY: src/ var/www/html
+EXPOSE: 80
+</code></pre>
+
+<ul>
+<li><em>FROM</em> určuje base image, ze které vycházíme.</li>
+<li><em>COPY</em> říká jaké soubory chceme odkud kam zkopírovat.</li>
+<li><em>EXPOSE</em> určuje porty, na kterých má kontejner naslouchat.</li>
+</ul>
+
+<h2 id="volume">Volume</h2>
+
+<p>Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. <em>base image</em>, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.</p>
+
+<h2 id="networking">Networking</h2>
+
+<p>Ve výchozím stavu je síťová komunikace obousměrně zakázaná nejen z kontejneru na hostující systém, ale i mezi běžícími kontejnery. Chceme-li aby bylo možné pracovat s kontejnerem na úrovni sítě, je nutné upravit Dockerfile viz. výše.</p>
+
+<p>Kromě otevírání portů je samozřejmě možné definovat i režim připojení do stítě. Pár příkladů níže:
+- <code>bridge</code>: Režim síťového mostu. Jedná se o výchozí volbu a nemusí se nastavovat.
+- <code>host</code>: Zcela odstraňuje síťovou izolaci mezi hostem a kontejnerem. Tato volba je možná pouze ve <em>swarm módu</em>.
+- <code>macvlan</code>: Na linkové vrstvě je komunikace směrována přímo do kontejneru namísto hostujícího systému.
+- <code>none</code>: Kontejner s touto volbou je odpojen od internetu.</p>
+
+<h2 id="build">Build</h2>
+
+<p>Build je proces, při kterém je z Dockerfile vygenerována image.</p>
+
+<p>Příkaz pro build může vypadat třeba takto:</p>
+
+<pre><code>docker build -t jmeno-kontejneru /cesta
+</code></pre>
+
+<ul>
+<li><code>-t jmeno-kontejneru</code>: Nově vytvořený kontejner se bude jmenovat <em>jmeno-kontejneru</em></li>
+<li><code>/cesta</code>: Sem patří adresář, ve kterém se nachází dockerfile.</li>
+</ul>
+
+<h2 id="swarm-mód">Swarm mód</h2>
+
+<p>Umožňuje běh komplexních služeb, které vyžadují běh mnoha kontejnerů na více fyzických počítačích.</p>
+
+<h2 id="docker-hub">Docker Hub</h2>
+
+<p>Docker Hub se nachází na adrese <a href="https://hub.docker.com/">hub.docker.com</a>. Jedná se o repozitář s docker images, které je možní stáhnout a používat. Po registraci je možné založit si vlastní repozitář.</p>
+
+
+
+      </div>
+    </div>
+    <footer>
+      <p>
+        <a style="box-shadow: none" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/hugo-start/images/cc80x15.png" /></a><br>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><b>Creative Commons</b> Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+    </footer>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-90823022-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </div>
+</body>
+</html>
