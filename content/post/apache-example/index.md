@@ -6,9 +6,9 @@ draft: false
 
 ![Logo PHP a Apache](image.png)
 
-V tomto článku si vysvětlíme a zprovozníme multistage build na příkladu webového serveru Apache s PHP včetně automatické instalace závislostí.
+V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.
 
-Než s článkem začnete, ujistěte se máte předpoklady – víte co je to Docker a máte povědomí o tom, jak funguje a k čemu je dobrý.
+Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom, jak funguje, k čemu je dobrý a znáte PHP s Apache.
 
 ## Předpoklady
 - [Co je to Docker](https://www.docker.com/what-docker)
