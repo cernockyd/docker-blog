@@ -146,6 +146,7 @@ docker run -p 80:80 <NAZEV IMAGE>
 Službu bychom nyní měli najít na adrese `localhost:80`.
 
 ## Další užitečné příkazy
+
 - `docker ps` List běžících containerů
 - `docker stop <ID CONTAINERU>` Vypne běžící container.
 - `docker ps` -a List všech containerů
