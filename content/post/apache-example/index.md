@@ -4,6 +4,8 @@ date: 2018-05-02
 draft: false
 ---
 
+![Logo PHP a Apache](image.png)
+
 V tomto článku si vysvětlíme a zprovozníme multistage build na příkladu webového serveru Apache s PHP včetně automatické instalace závislostí.
 
 Než s článkem začnete, ujistěte se máte předpoklady – víte co je to Docker a máte povědomí o tom, jak funguje a k čemu je dobrý.
@@ -27,7 +29,7 @@ Představte si, že instalujete Apache a PHP na svém počítači. Při instalac
 4. nakonfigurovat apache
 5. spustit apache
 
-Kdyby jste se rozhodli zprovoznit to samé na nějakém dalším počítači (např. u vašeho kamaráda, v práci), budete muset tyto kroky opakovat.
+Kdybyste se rozhodli zprovoznit to samé na nějakém dalším počítači (např. u vašeho kamaráda, v práci), budete muset tyto kroky opakovat.
 
 ### Zprovoznění s Dockerem
 
@@ -151,6 +153,6 @@ Službu bychom nyní měli najít na adrese `localhost:80`.
 - `docker exec <CONTAINER> <PŘÍKAZ>` Zavolá příkaz v containeru
 
 # Závěr
-Ukázali jsme si jak vytvořit základní službu s PHP a Apache. Nyní jsme schopní jednoduše spustit Apache na jakémkoliv počítači.
+Ukázali jsme si, jak vytvořit základní službu s PHP a Apache. Nyní jsme schopní jednoduše spustit Apache na jakémkoliv počítači.
 
 V navazujícím článku využijeme možnosti vícefázového buildování a PHP dependency manager - Composer.
