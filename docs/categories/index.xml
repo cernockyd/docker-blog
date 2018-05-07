@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Docker</title>
+    <title>Categories on Začínáme s Dockerem</title>
     <link>https://awfulthings.github.io/hugo-start/categories/</link>
-    <description>Recent content in Categories on Docker</description>
+    <description>Recent content in Categories on Začínáme s Dockerem</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     

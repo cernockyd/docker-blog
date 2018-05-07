@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker</title>
+    <title>Docker on Začínáme s Dockerem</title>
     <link>https://awfulthings.github.io/hugo-start/tags/docker/</link>
-    <description>Recent content on Docker</description>
+    <description>Recent content in Docker on Začínáme s Dockerem</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>

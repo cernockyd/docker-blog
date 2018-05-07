@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Archiv on Docker</title>
+    <title>Archiv on Začínáme s Dockerem</title>
     <link>https://awfulthings.github.io/hugo-start/post/</link>
-    <description>Recent content in Archiv on Docker</description>
+    <description>Recent content in Archiv on Začínáme s Dockerem</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cs-cz</language>
     <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://awfulthings.github.io/hugo-start/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Co je to Docker</title>
-      <link>https://awfulthings.github.io/hugo-start/post/what-is-docker/</link>
-      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/post/what-is-docker/</guid>
-      <description>Docker je nástroj, který umožňuje snadno tvořit, nasazovat a spouštět aplikace za použití kontejnerů. Kontejner potom umožňuje vývojáři distribuovat aplikaci se vším, co ke svému běhu potřebuje jako jeden balík dat. Tímto způsobem lze celkem snadno zajistit, že aplikace napsaná ve specifickém prostředí bude přenositelná na další stroje.
-Z určitého pohledu se můžeme na Docker dívat jako na virtualizační nástroj, ve kterém neběží další operační systém, ale používá linuxové jádro stroje, na kterém je spuštěn.</description>
-    </item>
-    
-    <item>
-      <title>PHP7 &#43; Apache example</title>
-      <link>https://awfulthings.github.io/hugo-start/post/apache-example/</link>
-      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://awfulthings.github.io/hugo-start/post/apache-example/</guid>
-      <description>V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.
-Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom jak funguje, k čemu je dobrý a znáte PHP s Apache.
-Předpoklady  Co je to Docker Instalace Dockeru Základní pojmy a principy Dockeru Co je to Apache Co je to PHP Composer - dependency management  Manuální instalace bez Dockeru Představte si, že instalujete Apache a PHP na svém počítači.</description>
-    </item>
     
     <item>
       <title>Základní pojmy</title>
@@ -41,6 +20,27 @@ Předpoklady  Co je to Docker Instalace Dockeru Základní pojmy a principy Dock
       <description>Článek představuje základní pojmy, se kterými běžně příjdete do styku při práci s Dockerem.
 Image Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. baseimage, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.
 Kontejner Kontejnerem nazýváme spuštěnou image. V podstatě se jedná o omezenou formu virtualizace, kdy není emulován hardware. Kontejner a hostující systém spolu sdílejí jádro operačního systému přičemž je aplikace běžící v kontejneru izolována od systému, který využívá.</description>
+    </item>
+    
+    <item>
+      <title>Co je to Docker</title>
+      <link>https://awfulthings.github.io/hugo-start/post/what-is-docker/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/hugo-start/post/what-is-docker/</guid>
+      <description>Docker je nástroj, který umožňuje snadno tvořit, nasazovat a spouštět aplikace za použití kontejnerů. Kontejner potom umožňuje vývojáři distribuovat aplikaci se vším, co ke svému běhu potřebuje jako jeden balík dat. Tímto způsobem lze celkem snadno zajistit, že aplikace napsaná ve specifickém prostředí bude přenositelná na další stroje.
+Z určitého pohledu se můžeme na Docker dívat jako na virtualizační nástroj, ve kterém neběží další operační systém, ale používá linuxové jádro stroje, na kterém je spuštěn.</description>
+    </item>
+    
+    <item>
+      <title>PHP7 &#43; Apache example</title>
+      <link>https://awfulthings.github.io/hugo-start/post/apache-example/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://awfulthings.github.io/hugo-start/post/apache-example/</guid>
+      <description>V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.
+Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom jak funguje, k čemu je dobrý a znáte PHP s Apache.
+Předpoklady  Co je to Docker Instalace Dockeru Základní pojmy a principy Dockeru Co je to Apache Co je to PHP Composer - dependency management  Manuální instalace bez Dockeru Představte si, že instalujete Apache a PHP na svém počítači.</description>
     </item>
     
     <item>
