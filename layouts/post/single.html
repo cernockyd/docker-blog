@@ -3,4 +3,6 @@
   <p class="date">{{ .Date.Local.Format "January 2, 2006" }}</p>
   {{ .Content }}
 
+  {{ partial "interact.html" . }}
+
 {{ end }}
