@@ -1,6 +1,6 @@
 ---
 title: "Co je to Docker"
-date: 2018-05-02
+date: 2018-04-28
 draft: false
 ---
 
