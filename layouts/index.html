@@ -1,12 +1,17 @@
 {{ define "main" }}
-  {{ .Content }}
 
-  <h2>New articles</h2>
+  <div class="lead">
+    <h1>Začínáme s Dockerem</h1>
+    <p>Docker je nástroj pro izolaci aplikací do kontejnerů. Na tomto webu naleznete jednoduché návody a tipy pro začátečníky.</p>
+    <a class="btn" href="/post/what-is-docker/">Více o Dockeru</a>
+  </div>
 
   {{ range first 10 (where .Data.Pages "Section" "post") }}
-  <li>
-    <a href="{{ .Permalink }}">{{.Title}}</a> — {{ .Date.Format "January 2, 2006" }}
-  </li>
+    <article class="preview">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="date">{{ .Date.Local.Format "January 2, 2006" }}</p>
+        <p>{{ .Summary }}</p>
+    </article>
+  {{ end }}
+{{ end }}
 
-{{ end }}
-{{ end }}

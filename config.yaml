@@ -6,15 +6,15 @@ googleAnalytics: UA-90823022-2
 
 menu:
   main:
-    - name: Homepage
+    - name: Nejnovější
       url: /
       weight: 10
-    - name: Archive
+    - name: Archiv
       identifier: post
       url: /post/
       weight: 20
 
 params:
   description: Užitečné návody.
-  authors: Authors
+  authors: kisk
 
