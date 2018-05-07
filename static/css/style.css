@@ -76,10 +76,6 @@ body {
   text-align: center;
 }
 
-.footer {
-  text-align: center;
-}
-
 .btn {
   display: inline-block;
   padding: 8px 16px;
@@ -87,6 +83,18 @@ body {
   font-weight: 600;
   font-size: 18px;
   background: #fff;
+  color: #000;
+  margin: 0 0 1em;
+}
+
+.btn-secondary {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  background: #efefef;
   color: #000;
   margin: 0 0 1em;
 }
@@ -134,6 +142,14 @@ code {
 
 pre code {
   display: block;
+}
+
+.comments {
+  margin-top: 48px;
+  margin-bottom: 24px;
+  background: #f6f8f9;
+  padding: 2px 24px 6px;
+  border-radius: 6px;
 }
 
 tt, code {
@@ -208,29 +224,18 @@ header h1 {
   padding: 0;
 }
 
-header .description {
-
-}
-
 footer {
-  clear: both;
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .page {
   display: block;
   max-width: 700px;
-  padding-left: 1.5em;
   padding-bottom: 2em;
   min-height: 400px;
-  margin: 0 auto;
-  margin-top: 1.2em;
-}
-
-aside {
-  display: inline-block;
-  float: left;
-  width: 300px;
-  margin-top: 1em;
+  margin: 1.2em auto 0;
 }
 
 nav ul,
