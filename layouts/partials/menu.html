@@ -1,12 +1,10 @@
-<nav>
-  <ul>
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main }}
-      {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-      <li class="{{if $active}} active{{end}}">
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-    {{end}}
-    <li>&hearts; {{ now.Year }} {{ .Site.Params.authors }}</li>
-  </ul>
-</nav>
+<ul class="menu">
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.main }}
+    {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+    <li class="{{if $active}} active{{end}}">
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+  {{end}}
+  <li><a href="https://github.com/awfulthings/hugo-start">Upravit stránku</a></li>
+</ul>

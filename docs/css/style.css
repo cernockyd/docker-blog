@@ -9,6 +9,99 @@ body {
   font-size: 18px;
 }
 
+.logo {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0;
+  font-family: sans-serif;
+  position: relative;
+  margin: 16px 0 14px;
+}
+
+.logo > a {
+  color: #fff;
+  text-decoration: none!important;
+}
+
+.header {
+  background: #b92c83;
+  background-image: linear-gradient(90deg, #b92c83,#673AB7);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  flex-direction: row;
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  color: #efd8ff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 16px 24px;
+  display: block;
+}
+
+.menu .active a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.lead {
+  background: #d6941c;
+  padding: .6em 1em .2em;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.preview a {
+  color: #000;
+}
+
+.preview {
+  margin-bottom: 48px;
+}
+
+.page img {
+  border-radius: 6px;
+}
+
+.lead p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.lead h1 {
+  font-weight: 600;
+  color: #fff;
+  padding: 0;
+  margin: 0!important;
+}
+
+nav a {
+  color: #000;
+}
+
 h1 {
   text-transform: uppercase;
   color: #000;
@@ -108,12 +201,12 @@ footer {
 }
 
 .page {
-  display: inline-block;
+  display: block;
   max-width: 700px;
   padding-left: 1.5em;
   padding-bottom: 2em;
   min-height: 400px;
-  float: left;
+  margin: 0 auto;
   margin-top: 1.2em;
 }
 
