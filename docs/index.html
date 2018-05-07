@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="cs-cz">
 <head>
-	<meta name="generator" content="Hugo 0.39" />
+	<meta name="generator" content="Hugo 0.37" />
   <meta charset="utf-8">
   <title>Docker</title>
   <link rel="stylesheet" href="/hugo-start/css/style.css">
@@ -49,24 +49,23 @@
     <article class="preview">
         <h2><a href="/hugo-start/post/what-is-docker/">Co je to Docker</a></h2>
         <p class="date">May 2, 2018</p>
-        <p>Docker je nástroj, který umožňuje snadno tvořit, nasazovat a spoustět aplikace za použití kontejnerů. Kontejner pootm umožňuje vývojáři distribuovat aplikaci se vším, co ke svému běhu potřebuje jako jeden balík dat. Támto způsobem lze celkem snadno zajistit, že aplikace napsaná ve specifickém prostředí bude přenositelná na další stroje.
-Z určitého pohledu se můžeme na Docker dívat jako na virtualizační stroj, který však nevytváří další operační systém, ale používá linuxové jádro stroje, na kterém běží.</p>
+        <p>Docker je nástroj, který umožňuje snadno tvořit, nasazovat a spouštět aplikace za použití kontejnerů. Kontejner potom umožňuje vývojáři distribuovat aplikaci se vším, co ke svému běhu potřebuje jako jeden balík dat. Tímto způsobem lze celkem snadno zajistit, že aplikace napsaná ve specifickém prostředí bude přenositelná na další stroje.
+Z určitého pohledu se můžeme na Docker dívat jako na virtualizační nástroj, ve kterém neběží další operační systém, ale používá linuxové jádro stroje, na kterém je spuštěn.</p>
     </article>
   
     <article class="preview">
         <h2><a href="/hugo-start/post/apache-example/">PHP7 &#43; Apache example</a></h2>
         <p class="date">May 2, 2018</p>
-        <p>todo:
-přečíst to po sobě  V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.
-Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom, jak funguje, k čemu je dobrý a znáte PHP s Apache.
+        <p>V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.
+Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom jak funguje, k čemu je dobrý a znáte PHP s Apache.
 Předpoklady  Co je to Docker Instalace Dockeru Základní pojmy a principy Dockeru Co je to Apache Co je to PHP Composer - dependency management  Manuální instalace bez Dockeru Představte si, že instalujete Apache a PHP na svém počítači.</p>
     </article>
   
     <article class="preview">
         <h2><a href="/hugo-start/post/pojmy/">Základní pojmy</a></h2>
         <p class="date">May 2, 2018</p>
-        <p>Článek představuje základní pojmy, se kterými se běžně příjdete do styku, když pracujete s Dockerem.
-Image Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. base image, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.
+        <p>Článek představuje základní pojmy, se kterými běžně příjdete do styku při práci s Dockerem.
+Image Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. baseimage, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.
 Kontejner Kontejnerem nazýváme spuštěnou image. V podstatě se jedná o omezenou formu virtualizace, kdy není emulován hardware. Kontejner a hostující systém spolu sdílejí jádro operačního systému přičemž je aplikace běžící v kontejneru izolována od systému, který využívá.</p>
     </article>
   

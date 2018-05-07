@@ -43,15 +43,9 @@
 
 <p><img src="image.png" alt="Logo PHP a Apache" /></p>
 
-<p><strong>todo:</strong></p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" disabled class="task-list-item"> přečíst to po sobě</label></li>
-</ul>
-
 <p>V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.</p>
 
-<p>Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom, jak funguje, k čemu je dobrý a znáte PHP s Apache.</p>
+<p>Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom jak funguje, k čemu je dobrý a znáte PHP s Apache.</p>
 
 <h2 id="předpoklady">Předpoklady</h2>
 
@@ -69,14 +63,14 @@
 <p>Představte si, že instalujete Apache a PHP na svém počítači. Při instalaci musíte provést řadu kroků:</p>
 
 <ol>
-<li>stáhnout Apache a nainstalovat jej</li>
-<li>stáhnout potřebnou verzi PHP</li>
-<li>stáhnout moduly pro Apache</li>
-<li>nakonfigurovat apache</li>
-<li>spustit apache</li>
+<li>Stáhnout Apache a nainstalovat jej</li>
+<li>Stáhnout potřebnou verzi PHP</li>
+<li>Stáhnout moduly pro Apache</li>
+<li>Nakonfigurovat apache</li>
+<li>Spustit Apache</li>
 </ol>
 
-<p>Kdybyste se rozhodli zprovoznit to samé na nějakém dalším počítači (např. u vašeho kamaráda, v práci), budete muset tyto kroky opakovat.</p>
+<p>Kdybyste se rozhodli zprovoznit to samé na nějakém dalším počítači (např. u vašeho kamaráda nebo v práci), budete muset tyto kroky opakovat.</p>
 
 <h2 id="zprovoznění-s-dockerem">Zprovoznění s Dockerem</h2>
 
@@ -133,7 +127,7 @@ Pomocí tohoto vypíšeme veškeré informace o instalaci PHP a nastavení Apach
 </code></pre>
 
 <p>Apache defaultně předpokládá, že se náš web (vstupní soubor) nachází ve složce <code>/var/www/html</code>.
-Pomocí následujících příkazů vytvoříme v imagi složku <code>/var/www</code> a nastavíme ji jako working directory pro další příkazy.</p>
+Pomocí následujících příkazů vytvoříme v image složku <code>/var/www</code> a nastavíme ji jako working directory pro další příkazy.</p>
 
 <pre><code># vytvorime adresar
 RUN mkdir -p /var/www
@@ -192,11 +186,11 @@ EXPOSE 80
 <h2 id="další-užitečné-příkazy">Další užitečné příkazy</h2>
 
 <ul>
-<li><code>docker ps</code> List běžících containerů</li>
-<li><code>docker stop &lt;ID CONTAINERU&gt;</code> Vypne běžící container.</li>
-<li><code>docker ps</code> -a List všech containerů</li>
-<li><code>docker ps -a -q</code> List IDs všech containerů</li>
-<li><code>docker exec &lt;CONTAINER&gt; &lt;PŘÍKAZ&gt;</code> Zavolá příkaz v containeru</li>
+<li><code>docker ps</code> Seznam běžících kontejnerů</li>
+<li><code>docker stop &lt;ID CONTAINERU&gt;</code> Vypne běžící kontejner</li>
+<li><code>docker ps -a</code> Seznam všech kontejnerů</li>
+<li><code>docker ps -a -q</code> Seznam ID všech kontejnerů</li>
+<li><code>docker exec &lt;CONTAINER&gt; &lt;PŘÍKAZ&gt;</code> Zadaný příkaz spustí v prostředí vybraného kontejneru</li>
 </ul>
 
 <h1 id="závěr">Závěr</h1>

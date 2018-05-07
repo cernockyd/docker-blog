@@ -6,13 +6,9 @@ draft: false
 
 ![Logo PHP a Apache](image.png)
 
-**todo:**
-
-- [ ] přečíst to po sobě
-
 V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.
 
-Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom, jak funguje, k čemu je dobrý a znáte PHP s Apache.
+Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom jak funguje, k čemu je dobrý a znáte PHP s Apache.
 
 ## Předpoklady
 - [Co je to Docker](https://www.docker.com/what-docker)
@@ -22,18 +18,17 @@ Než s článkem začnete, ujistěte se, že máte splněny předpoklady – ví
 - [Co je to PHP](http://php.net/)
 - [Composer - dependency management](https://getcomposer.org/doc/00-intro.md#dependency-management)
 
-
 ## Manuální instalace bez Dockeru
 
 Představte si, že instalujete Apache a PHP na svém počítači. Při instalaci musíte provést řadu kroků:
 
-1. stáhnout Apache a nainstalovat jej
-2. stáhnout potřebnou verzi PHP
-3. stáhnout moduly pro Apache
-4. nakonfigurovat apache
-5. spustit apache
+1. Stáhnout Apache a nainstalovat jej
+2. Stáhnout potřebnou verzi PHP
+3. Stáhnout moduly pro Apache
+4. Nakonfigurovat apache
+5. Spustit Apache
 
-Kdybyste se rozhodli zprovoznit to samé na nějakém dalším počítači (např. u vašeho kamaráda, v práci), budete muset tyto kroky opakovat.
+Kdybyste se rozhodli zprovoznit to samé na nějakém dalším počítači (např. u vašeho kamaráda nebo v práci), budete muset tyto kroky opakovat.
 
 ## Zprovoznění s Dockerem
 
@@ -87,7 +82,7 @@ FROM php:7.2.1-apache as apache
 ```
 
 Apache defaultně předpokládá, že se náš web (vstupní soubor) nachází ve složce `/var/www/html`.
-Pomocí následujících příkazů vytvoříme v imagi složku `/var/www` a nastavíme ji jako working directory pro další příkazy.
+Pomocí následujících příkazů vytvoříme v image složku `/var/www` a nastavíme ji jako working directory pro další příkazy.
 
 ```
 # vytvorime adresar
@@ -152,11 +147,11 @@ Službu bychom nyní měli najít na adrese `localhost:80`.
 
 ## Další užitečné příkazy
 
-- `docker ps` List běžících containerů
-- `docker stop <ID CONTAINERU>` Vypne běžící container.
-- `docker ps` -a List všech containerů
-- `docker ps -a -q` List IDs všech containerů
-- `docker exec <CONTAINER> <PŘÍKAZ>` Zavolá příkaz v containeru
+- `docker ps` Seznam běžících kontejnerů
+- `docker stop <ID CONTAINERU>` Vypne běžící kontejner
+- `docker ps -a` Seznam všech kontejnerů
+- `docker ps -a -q` Seznam ID všech kontejnerů
+- `docker exec <CONTAINER> <PŘÍKAZ>` Zadaný příkaz spustí v prostředí vybraného kontejneru
 
 # Závěr
 Ukázali jsme si, jak vytvořit základní službu s PHP a Apache. Nyní jsme schopní jednoduše spustit Apache na jakémkoliv počítači.

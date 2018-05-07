@@ -42,11 +42,11 @@
   
 
 <p><img src="docker--schema.png" alt="Schema vystihující fungování Dockeru" />
-Článek představuje základní pojmy, se kterými se běžně příjdete do styku, když pracujete s Dockerem.</p>
+Článek představuje základní pojmy, se kterými běžně příjdete do styku při práci s Dockerem.</p>
 
 <h2 id="image">Image</h2>
 
-<p>Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. <em>base image</em>, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.</p>
+<p>Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. <em>baseimage</em>, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.</p>
 
 <h2 id="kontejner">Kontejner</h2>
 
@@ -56,8 +56,7 @@
 
 <h2 id="dockerfile">Dockerfile</h2>
 
-<p>Jedná se o textový soubor určující podobu image, kdy každý řádek představuje jeden příkaz.
-Jedná se o textový soubor s instrukcemi pro vybuildění kontejneru z image.</p>
+<p>Jedná se o textový soubor určující podobu image, kdy každý řádek představuje jeden příkaz.</p>
 
 <p>Jednoduchý Dockerfile může vypadat třeba takto:</p>
 
@@ -72,9 +71,9 @@ EXPOSE: 80
 <li><em>EXPOSE</em> určuje porty, na kterých má kontejner naslouchat.</li>
 </ul>
 
-<h2 id="volume">Volume</h2>
+<h2 id="volumes">Volumes</h2>
 
-<p>Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. <em>base image</em>, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.</p>
+<p>Volumes je volba umožňující rw přístup k souborovému systému hostujícího stroje, ke kterému kontejner jinak nemá přístup nebo z něj může jen číst.</p>
 
 <h2 id="networking">Networking</h2>
 
@@ -116,21 +115,21 @@ EXPOSE: 80
 <pre><code>version: '3'
 
 services:
-	product-service:
-		build: ./product
-		volumes:
-			- ./product:/usr/src/app
-		ports:
-			- 5001:80
+    product-service:
+        build: ./product
+        volumes:
+            - ./product:/usr/src/app
+        ports:
+            - 5001:80
 
-	website:
-		image: php:apache	
-		volumes:
-			- ./website:/var/www/html
-		ports:
-			- 5000:80
-		depends_on:
-			- product-service
+    website:
+        image: php:apache   
+        volumes:
+            - ./website:/var/www/html
+        ports:
+            - 5000:80
+        depends_on:
+            - product-service
 </code></pre>
 
 <p>Vysvětlení:</p>

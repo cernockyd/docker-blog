@@ -5,10 +5,10 @@ draft: false
 ---
 
 ![Schema vystihující fungování Dockeru](docker--schema.png)
-Článek představuje základní pojmy, se kterými se běžně příjdete do styku, když pracujete s Dockerem.
+Článek představuje základní pojmy, se kterými běžně příjdete do styku při práci s Dockerem.
 
 ## Image
-Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. *base image*, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.
+Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. *baseimage*, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.
 
 ## Kontejner
 Kontejnerem nazýváme spuštěnou image. V podstatě se jedná o omezenou formu virtualizace, kdy není emulován hardware. Kontejner a hostující systém spolu sdílejí jádro operačního systému přičemž je aplikace běžící v kontejneru izolována od systému, který využívá.
@@ -17,7 +17,6 @@ Kontejnery mají oproti virtuálním strojům menší nároky na hardware a výr
 
 ## Dockerfile
 Jedná se o textový soubor určující podobu image, kdy každý řádek představuje jeden příkaz.
-Jedná se o textový soubor s instrukcemi pro vybuildění kontejneru z image.
 
 Jednoduchý Dockerfile může vypadat třeba takto:
 ```
@@ -30,8 +29,8 @@ EXPOSE: 80
 - *COPY* říká jaké soubory chceme odkud kam zkopírovat.
 - *EXPOSE* určuje porty, na kterých má kontejner naslouchat.
 
-## Volume
-Image je otisk souborového systému, resp. jeho částí nezbytných pro běh vybrané aplikace. Každá image vychází z tzv. *base image*, která oproti nové image neobsahuje požadované funkce (např. Apache server) nebo soubory.
+## Volumes
+Volumes je volba umožňující rw přístup k souborovému systému hostujícího stroje, ke kterému kontejner jinak nemá přístup nebo z něj může jen číst.
 
 ## Networking
 Ve výchozím stavu je síťová komunikace obousměrně zakázaná nejen z kontejneru na hostující systém, ale i mezi běžícími kontejnery. Chceme-li aby bylo možné pracovat s kontejnerem na úrovni sítě, je nutné upravit Dockerfile viz. výše.
