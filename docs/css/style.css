@@ -76,6 +76,10 @@ body {
   text-align: center;
 }
 
+.footer {
+  text-align: center;
+}
+
 .btn {
   display: inline-block;
   padding: 8px 16px;
