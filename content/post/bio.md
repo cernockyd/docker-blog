@@ -14,3 +14,4 @@ Zajímám se o nové technologie a koncept Dockeru mě zaujal (obecně kontejner
 
 ## Jan Fitz
  - taky to mám rád - Docker rocks!!
+ - test z Nami jsem absolvoval 25.5.2018 v 8:00
