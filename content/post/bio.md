@@ -10,7 +10,7 @@ draft: false
 - mam to rad
 
 ## Ondrej Kadlec
-Zajímám se o nové technologie a koncept Dockeru mě zaujal (obecně kontejnery) a vidím v něm budoucnost.
+- docker je moc fajn, jednou se ho určitě naučím pořádně používat...
 
 ## Jan Fitz
  - taky to mám rád - Docker rocks!!
