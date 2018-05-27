@@ -7,7 +7,7 @@
   </div>
 
   {{ range first 10 (where .Data.Pages "Section" "post") }}
-    <article class="preview" onclick="location.href='{{ .RelPermalink }}';">
+    <article class="preview">
         <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p class="date">{{ .Date.Local.Format "January 2, 2006" }}</p>
         <p>{{ .Summary }}</p>
