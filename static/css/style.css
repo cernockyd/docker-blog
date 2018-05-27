@@ -118,21 +118,7 @@ body {
 }
 
 .preview {
-  margin: 0 0 24px;
-  padding: 8px 0;
-  display: block;
-}
-
-.preview h2 {
-  margin: 0;
-}
-
-.preview:hover {
-  background: #f6f6f6;
-  margin: 0 -8px 24px;
-  padding: 8px 8px 8px;
-  border-radius: 6px;
-  cursor: pointer;
+  margin-bottom: 48px;
 }
 
 .page img {
