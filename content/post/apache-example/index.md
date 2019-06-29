@@ -4,8 +4,6 @@ date: 2018-04-26
 draft: false
 ---
 
-![Logo PHP a Apache](image.png)
-
 V tomto článku si zprovozníme webový server Apache s PHP. Později se dostaneme také k automatické instalaci závislostí.
 
 Než s článkem začnete, ujistěte se, že máte splněny předpoklady – víte co je to Docker, máte povědomí o tom jak funguje, k čemu je dobrý a znáte PHP s Apache.
