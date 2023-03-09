@@ -1,5 +1,5 @@
 title: Začínáme s Dockerem
-baseURL: https://awfulthings.github.io/hugo-start/
+baseURL: https://docker-blog.vercel.app/
 languageCode: cs-cz
 publishDir: docs
 googleAnalytics: UA-90823022-2
